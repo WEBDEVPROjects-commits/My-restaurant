@@ -1,0 +1,87 @@
+*{
+    margin: 0;padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.navbar{
+    display: flex;
+    background-color:navy;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+}
+.navbar h1{
+    color: yellow;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.navbar input{
+    min-width: 0px;
+    width: 60vw;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    
+}
+.navbar button{
+    height: 6vh;
+    padding: 12px;
+    background-color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    border-radius: 5px;
+}
+.menuvid{
+    text-align: center;
+}
+.menuvid video{
+    width: 90%;
+    height: 40vh;
+    object-fit: cover;
+    object-position:center;
+    border-radius: 5px;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    padding: 16px 140px 50px 140px;
+    gap: 65px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    box-shadow: 0px 0px 3px 0px #d4c5c5;
+    border-radius: 6px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    height: 29vh;
+    object-fit: cover;
+    object-position: center;
+}
+.card h2{
+    color: green;
+
+}
+ #Category{
+    color: green;
+}
+#ingredients{
+    color: red;
+}
+
+.card:hover{
+    transform: translate(0px, -7px);
+    transition: all 0.2s linear;
+    box-shadow: 0px 0px 15px 3px #000000;
+}
